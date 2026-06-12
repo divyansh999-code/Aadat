@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/widget_background"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="12dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AADAT"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textColor="@color/widget_text"
+            android:letterSpacing="0.15" />
+        <TextView
+            android:id="@+id/widget_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="9sp"
+            android:textColor="@color/widget_text_secondary"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+
+    <!-- Habit Row 0 -->
+    <LinearLayout
+        android:id="@+id/widget_row_0"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+        <ImageView
+            android:id="@+id/widget_checkbox_0"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/widget_unchecked"
+            android:contentDescription="Checkbox" />
+        <TextView
+            android:id="@+id/widget_name_0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/widget_text"
+            android:singleLine="true"
+            android:ellipsize="end" />
+        <TextView
+            android:id="@+id/widget_streak_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textSize="9sp"
+            android:textColor="@color/widget_text_secondary" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/widget_divider_0"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/widget_border"
+        android:visibility="gone" />
+
+    <!-- Habit Row 1 -->
+    <LinearLayout
+        android:id="@+id/widget_row_1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+        <ImageView
+            android:id="@+id/widget_checkbox_1"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/widget_unchecked"
+            android:contentDescription="Checkbox" />
+        <TextView
+            android:id="@+id/widget_name_1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/widget_text"
+            android:singleLine="true"
+            android:ellipsize="end" />
+        <TextView
+            android:id="@+id/widget_streak_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textSize="9sp"
+            android:textColor="@color/widget_text_secondary" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/widget_divider_1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/widget_border"
+        android:visibility="gone" />
+
+    <!-- Habit Row 2 -->
+    <LinearLayout
+        android:id="@+id/widget_row_2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+        <ImageView
+            android:id="@+id/widget_checkbox_2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/widget_unchecked"
+            android:contentDescription="Checkbox" />
+        <TextView
+            android:id="@+id/widget_name_2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/widget_text"
+            android:singleLine="true"
+            android:ellipsize="end" />
+        <TextView
+            android:id="@+id/widget_streak_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textSize="9sp"
+            android:textColor="@color/widget_text_secondary" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/widget_divider_2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/widget_border"
+        android:visibility="gone" />
+
+    <!-- Habit Row 3 -->
+    <LinearLayout
+        android:id="@+id/widget_row_3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingVertical="8dp">
+        <ImageView
+            android:id="@+id/widget_checkbox_3"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/widget_unchecked"
+            android:contentDescription="Checkbox" />
+        <TextView
+            android:id="@+id/widget_name_3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/widget_text"
+            android:singleLine="true"
+            android:ellipsize="end" />
+        <TextView
+            android:id="@+id/widget_streak_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:textSize="9sp"
+            android:textColor="@color/widget_text_secondary" />
+    </LinearLayout>
+
+    <!-- Empty/No habits text -->
+    <TextView
+        android:id="@+id/widget_empty_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No habits scheduled today."
+        android:textSize="11sp"
+        android:textColor="@color/widget_text_secondary"
+        android:visibility="gone" />
+
+    <!-- Truncated/More text -->
+    <TextView
+        android:id="@+id/widget_more_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="9sp"
+        android:textColor="@color/widget_text_secondary"
+        android:paddingVertical="4dp"
+        android:visibility="gone" />
+
+</LinearLayout>
