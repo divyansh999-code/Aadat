@@ -23,7 +23,7 @@
 
 | Home | Stats | Profile | Widget |
 |:----:|:-----:|:-------:|:------:|
-| <img src="https://github.com/user-attachments/assets/b2465991-6c55-4cc3-8df3-b7c2b05a092c" width="180" /> | <img src="https://github.com/user-attachments/assets/61088848-b046-40b1-acbb-d83802577443" width="180" /> | <img src="https://github.com/user-attachments/assets/e82c00d4-2487-48d8-85ed-f868856ebe42" width="180" /> | <img src="https://github.com/user-attachments/assets/f59ce906-e9d3-4e13-8bc9-1698fbd59359" width="180" /> |
+| <img src="https://github.com/user-attachments/assets/b2465991-6c55-4cc3-8df3-b7c2b05a092c" width="180" /> | <img src="https://github.com/user-attachments/assets/61088848-b046-40b1-acbb-d83802577443" width="180" /> | <img src="https://github.com/user-attachments/assets/e82c00d4-2487-48d8-85ed-f868856ebe42" width="180" /> | <img src="https://github.com/user-attachments/assets/9e263d68-f225-476f-a7de-4573ad27ef06" width="180" /> |
 
 ---
 
