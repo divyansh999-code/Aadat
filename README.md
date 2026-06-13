@@ -1,6 +1,6 @@
 <div align="center">
-<img alt="Aadat Logo" src="https://github.com/user-attachments/assets/a59c32ed-1399-4e08-a10b-65f0f192f845" width="100" />
 
+<img alt="Aadat Logo" src="https://github.com/user-attachments/assets/a59c32ed-1399-4e08-a10b-65f0f192f845" width="100" />
 
 # Aadat — عادت
 
@@ -21,11 +21,9 @@
 
 ## Screenshots
 
-> *(Replace with your actual screenshots)*
-
 | Home | Stats | Profile | Widget |
 |:----:|:-----:|:-------:|:------:|
-| ![Home](screenshots/home.png) | ![Stats](screenshots/stats.png) | ![Profile](screenshots/profile.png) | ![Widget](screenshots/widget.png) |
+| <img src="https://github.com/user-attachments/assets/b2465991-6c55-4cc3-8df3-b7c2b05a092c" width="180" /> | <img src="https://github.com/user-attachments/assets/61088848-b046-40b1-acbb-d83802577443" width="180" /> | <img src="https://github.com/user-attachments/assets/e82c00d4-2487-48d8-85ed-f868856ebe42" width="180" /> | <img src="https://github.com/user-attachments/assets/f59ce906-e9d3-4e13-8bc9-1698fbd59359" width="180" /> |
 
 ---
 
