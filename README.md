@@ -1,6 +1,6 @@
 <div align="center">
-    
-<img src="assets/icon/logo.png" alt="Aadat Logo" width="100" />
+<img alt="Aadat Logo" src="https://github.com/user-attachments/assets/a59c32ed-1399-4e08-a10b-65f0f192f845" width="100" />
+
 
 # Aadat — عادت
 
