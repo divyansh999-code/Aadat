@@ -11,7 +11,7 @@ void main() {
       return DateTime(date.year, date.month, date.day);
     }
 
-    // 1. Seed the 5 habits as in HabitProvider.debugSeedData
+    // 1. Setup the 5 test habits
     final habit0 = Habit(
       id: 0,
       name: "Morning Run",

@@ -40,59 +40,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
     super.dispose();
   }
 
-  // ==========================================
-  // DEBUG ONLY - Temporary database seeding dialog
-  // ==========================================
-  void _showDebugSeedDialog(BuildContext context) {
-    showDialog(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        backgroundColor: Theme.of(context).colorScheme.surface,
-        title: Text(
-          'Seed Debug Data?',
-          style: GoogleFonts.dmSans(fontWeight: FontWeight.w700),
-        ),
-        content: Text(
-          'This will delete all current habits, logs, and stacks, and seed the database with mock screenshot data. This is a debug-only feature.',
-          style: GoogleFonts.dmSans(),
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.pop(ctx),
-            child: Text(
-              'Cancel',
-              style: GoogleFonts.dmSans(color: const Color(0xFF888888)),
-            ),
-          ),
-          TextButton(
-            onPressed: () async {
-              Navigator.pop(ctx);
-              HapticFeedback.heavyImpact();
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(
-                  content: Text('Seeding screenshot data...'),
-                  duration: Duration(seconds: 1),
-                ),
-              );
-              await context.read<HabitProvider>().debugSeedData();
-              if (context.mounted) {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(
-                    content: Text('Database seeded successfully!'),
-                    duration: Duration(seconds: 1),
-                  ),
-                );
-              }
-            },
-            child: Text(
-              'Seed',
-              style: GoogleFonts.dmSans(color: Colors.red, fontWeight: FontWeight.bold),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -105,7 +52,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
       body: SafeArea(
         child: Column(
           children: [
-            // Settings Icon Row aligned to the right (with long-press debug seeding)
+            // Settings Icon Row aligned to the right
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 14),
               child: Align(
@@ -117,7 +64,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       MaterialPageRoute(builder: (_) => const SettingsScreen()),
                     );
                   },
-                  onLongPress: () => _showDebugSeedDialog(context),
                   child: Icon(
                     Icons.settings_outlined,
                     size: 22,

@@ -328,41 +328,5 @@ class DatabaseService {
     }
   }
 
-  // ==========================================
-  // DEBUG ONLY - Temporary data seeding for screenshots
-  // ==========================================
-  Future<void> debugClearAndSeed({
-    required List<Habit> habits,
-    required List<HabitLog> logs,
-    required String stackName,
-    required List<int> stackHabitIndices,
-  }) async {
-    await db.transaction((txn) async {
-      await txn.delete('habits');
-      await txn.delete('habit_logs');
-      await txn.delete('habit_stacks');
 
-      final habitIds = <int>[];
-      for (final h in habits) {
-        final id = await txn.insert('habits', h.toMap());
-        habitIds.add(id);
-      }
-
-      for (final log in logs) {
-        final actualHabitId = habitIds[log.habitId];
-        await txn.insert('habit_logs', {
-          'habitId': actualHabitId,
-          'date': _dateKey(log.date),
-          'completionCount': log.completionCount,
-        });
-      }
-
-      final stackHabitIds = stackHabitIndices.map((idx) => habitIds[idx]).toList();
-      await txn.insert('habit_stacks', {
-        'name': stackName,
-        'habitIds': stackHabitIds.join(','),
-        'createdAt': DateTime.now().toIso8601String(),
-      });
-    });
-  }
 }
